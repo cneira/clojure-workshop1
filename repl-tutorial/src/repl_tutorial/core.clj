@@ -12,9 +12,11 @@
     (let [ fields   (str/split x #",")]
       (fields 1))))
 
+(defn return-only-name [name file]
+  (for [x (rest file )
+        :let  [person-name ( (str/split x #",")  1) ]
+        :when (= name  person-name )
+        ]
+    (println x )
+    ))
 
-
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
