@@ -3,7 +3,8 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.6.0"]]
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [clojure-watch "LATEST"]]
   :main ^:skip-aot repl-tutorial.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
